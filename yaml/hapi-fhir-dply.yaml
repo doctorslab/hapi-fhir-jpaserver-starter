@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fhir-dply
+spec:
+  selector:
+    matchLabels:
+      app: fhir
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: fhir
+    spec:
+      containers:
+      - name: fhir
+        image: dockerreg:5000/hapi:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080

@@ -1,0 +1,1 @@
+docker build --tag dockeerg:5000/hapi:latest .

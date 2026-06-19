@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: 'jdbc:sqlserver://10.170.184.69:1433;databaseName=fhir;encrypt=true;trustServerCertificate=true'
+    username: fhir
+    password: C?Z9N3.dDnx(UswG;aJyP2
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    properties:
+      hibernate.dialect: org.hibernate.dialect.SQLServer2012Dialect
+      hibernate.search.enabled: false
